@@ -2,6 +2,7 @@ package com.example.flexstageapi.Controller;
 
 import com.example.flexstageapi.Entities.PaiementEntity;
 import com.example.flexstageapi.Repository.PaiementRepository;
+import com.example.flexstageapi.Service.PaiementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,9 @@ import java.util.List;
 public class PaiementController {
     @Autowired
     public PaiementRepository paiementRepository;
+
+    @Autowired
+    public PaiementService paiementService;
 
     public List<PaiementEntity> getPaiement(){
         return (List<PaiementEntity>) paiementRepository.findAll();
@@ -27,9 +31,9 @@ public class PaiementController {
                 .orElseThrow();
     }
     @PostMapping(path = "/payer/")
-    public void payer (PaiementEntity paiementEntity){
+    public void payer (@RequestBody PaiementEntity paiementEntity){
         try {
-            paiementRepository.save(paiementEntity);
+            paiementService.effectuerPaiement(paiementEntity);
         }catch (Exception exception){
             throw new IllegalStateException(""+exception);
         }
