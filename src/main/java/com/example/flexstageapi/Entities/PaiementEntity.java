@@ -1,11 +1,11 @@
-package com.example.flexstageapi;
+package com.example.flexstageapi.Entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Table(name = "paiement")
 @Entity
-public class Paiement {
+public class PaiementEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
