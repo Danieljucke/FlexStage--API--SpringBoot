@@ -1,7 +1,7 @@
-package com.uscitechstage.FlexStage2.service;
+package com.example.flexstageapi.service;
 
-import com.uscitechstage.FlexStage2.Hotel;
-import com.uscitechstage.FlexStage2.repository.HotelRepository;
+import com.example.flexstageapi.Hotel;
+import com.example.flexstageapi.repository.HotelRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
