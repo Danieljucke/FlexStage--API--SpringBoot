@@ -1,7 +1,7 @@
-package com.uscitechstage.FlexStage2.controller;
+package com.example.flexstageapi.controller;
 
-import com.uscitechstage.FlexStage2.Hotel;
-import com.uscitechstage.FlexStage2.service.HotelService;
+import com.example.flexstageapi.Hotel;
+import com.example.flexstageapi.service.HotelService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
