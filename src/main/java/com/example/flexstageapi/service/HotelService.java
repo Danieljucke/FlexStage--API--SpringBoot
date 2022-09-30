@@ -1,6 +1,6 @@
-package com.uscitechstage.FlexStage2.service;
+package com.example.flexstageapi.service;
 
-import com.uscitechstage.FlexStage2.Hotel;
+import com.example.flexstageapi.Hotel;
 
 import java.util.List;
 
