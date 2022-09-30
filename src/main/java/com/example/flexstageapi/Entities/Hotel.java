@@ -1,4 +1,4 @@
-package com.uscitechstage.FlexStage2;
+package com.example.flexstageapi;
 
 import lombok.NoArgsConstructor;
 
