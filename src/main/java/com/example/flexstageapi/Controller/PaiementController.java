@@ -26,6 +26,12 @@ public class PaiementController {
                 .findFirst()
                 .orElseThrow();
     }
-//    @PostMapping(path = "/payer/")
-//    public
+    @PostMapping(path = "/payer/")
+    public void payer (PaiementEntity paiementEntity){
+        try {
+            paiementRepository.save(paiementEntity);
+        }catch (Exception exception){
+            throw new IllegalStateException(""+exception);
+        }
+    }
 }
